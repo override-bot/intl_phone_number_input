@@ -32,36 +32,19 @@ class Item extends StatelessWidget {
     return Container(
       // color: Colors.grey,
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.start,
-        mainAxisSize: MainAxisSize.min,
-        children: <Widget>[
-          SizedBox(width: leadingPadding),
-          Container(
-            padding: EdgeInsets.all(5),
-            color: Colors.grey,
-            child: Row(
-              children: [
-                _Flag(
-                  country: country,
-                  showFlag: showFlag,
-                  useEmoji: useEmoji,
-                ),
-                SizedBox(
-                  width: 5,
-                ),
-                Icon(
-                  Icons.arrow_drop_down,
-                  color: Colors.black,
-                )
-              ],
-            ),
+        children: [
+          _Flag(
+            country: country,
+            showFlag: showFlag,
+            useEmoji: useEmoji,
           ),
-          SizedBox(width: 12.0),
-          Text(
-            '$dialCode',
-            textDirection: TextDirection.ltr,
-            style: textStyle,
+          SizedBox(
+            width: 5,
           ),
+          Icon(
+            Icons.arrow_drop_down,
+            color: Colors.black,
+          )
         ],
       ),
     );

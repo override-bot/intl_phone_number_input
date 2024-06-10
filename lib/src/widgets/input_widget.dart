@@ -292,18 +292,19 @@ class _InputWidgetState extends State<InternationalPhoneNumberInput> {
 
     if (widget.selectorConfig.setSelectorButtonAsPrefixIcon) {
       return value.copyWith(
+          prefixText: country?.dialCode,
           prefixIcon: SelectorButton(
-        country: country,
-        countries: countries,
-        onCountryChanged: onCountryChanged,
-        selectorConfig: widget.selectorConfig,
-        selectorTextStyle: widget.selectorTextStyle,
-        searchBoxDecoration: widget.searchBoxDecoration,
-        locale: locale,
-        isEnabled: widget.isEnabled,
-        autoFocusSearchField: widget.autoFocusSearch,
-        isScrollControlled: widget.countrySelectorScrollControlled,
-      ));
+            country: country,
+            countries: countries,
+            onCountryChanged: onCountryChanged,
+            selectorConfig: widget.selectorConfig,
+            selectorTextStyle: widget.selectorTextStyle,
+            searchBoxDecoration: widget.searchBoxDecoration,
+            locale: locale,
+            isEnabled: widget.isEnabled,
+            autoFocusSearchField: widget.autoFocusSearch,
+            isScrollControlled: widget.countrySelectorScrollControlled,
+          ));
     }
 
     return value;
