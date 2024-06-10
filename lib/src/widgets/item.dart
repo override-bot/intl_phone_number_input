@@ -33,14 +33,9 @@ class Item extends StatelessWidget {
       padding: EdgeInsets.only(left: 7, right: 5),
       decoration: BoxDecoration(
           border: Border.fromBorderSide(BorderSide(
-            color: Color.fromARGB(86, 232, 234, 235),
+            color: Colors.grey[400]!,
           )),
-          color: Color.fromARGB(
-            86,
-            232,
-            234,
-            235,
-          ),
+          color: Colors.grey[400]!,
           borderRadius: BorderRadius.only(
               topLeft: Radius.circular(5), bottomLeft: Radius.circular(5))),
       // width: 40,
