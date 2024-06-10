@@ -33,11 +33,11 @@ class Item extends StatelessWidget {
       padding: EdgeInsets.only(left: 7, right: 5),
       decoration: BoxDecoration(
           border: Border.fromBorderSide(BorderSide(
-            color: Colors.grey[400]!,
+            color: Color.fromARGB(238, 232, 232, 232),
           )),
-          color: Colors.grey[400]!,
+          color: Color.fromARGB(238, 232, 232, 232),
           borderRadius: BorderRadius.only(
-              topLeft: Radius.circular(5), bottomLeft: Radius.circular(5))),
+              topLeft: Radius.circular(10), bottomLeft: Radius.circular(10))),
       // width: 40,
       height: 60,
 
