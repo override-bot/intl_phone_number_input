@@ -30,7 +30,9 @@ class Item extends StatelessWidget {
       dialCode = dialCode.padRight(5, "   ");
     }
     return Container(
-      // color: Colors.grey,
+      color: Colors.grey,
+      width: 40,
+      height: 60,
       child: Row(
         children: [
           _Flag(
