@@ -30,18 +30,13 @@ class Item extends StatelessWidget {
       dialCode = dialCode.padRight(5, "   ");
     }
     return Container(
-      padding: EdgeInsets.only(left: 5, right: 5),
+      padding: EdgeInsets.only(left: 7, right: 5),
       decoration: BoxDecoration(
           border: Border.fromBorderSide(BorderSide(
-            color: Color.fromARGB(
-              1,
-              232,
-              234,
-              235,
-            ),
+            color: Color.fromARGB(86, 232, 234, 235),
           )),
           color: Color.fromARGB(
-            1,
+            86,
             232,
             234,
             235,
