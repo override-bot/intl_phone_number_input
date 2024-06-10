@@ -30,7 +30,7 @@ class Item extends StatelessWidget {
       dialCode = dialCode.padRight(5, "   ");
     }
     return Container(
-      color: Colors.grey,
+      // color: Colors.grey,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,
         mainAxisSize: MainAxisSize.min,
@@ -50,7 +50,7 @@ class Item extends StatelessWidget {
                   width: 5,
                 ),
                 Icon(
-                  Icons.keyboard_arrow_down,
+                  Icons.arrow_drop_down,
                   color: Colors.black,
                 )
               ],
