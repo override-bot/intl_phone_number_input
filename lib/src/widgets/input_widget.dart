@@ -294,7 +294,7 @@ class _InputWidgetState extends State<InternationalPhoneNumberInput> {
       return value.copyWith(
           prefix: Padding(
             padding: EdgeInsets.all(10),
-            child: Text("${country?.dialCode} ",
+            child: Text("${country?.dialCode}",
                 style: TextStyle(
                   fontSize: (11 / 720) * MediaQuery.of(context).size.height,
                   color: Colors.black,
