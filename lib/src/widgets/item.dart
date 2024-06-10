@@ -30,8 +30,22 @@ class Item extends StatelessWidget {
       dialCode = dialCode.padRight(5, "   ");
     }
     return Container(
+      padding: EdgeInsets.only(left: 5, right: 5),
       decoration: BoxDecoration(
-          color: Colors.grey[300],
+          border: Border.fromBorderSide(BorderSide(
+            color: Color.fromARGB(
+              1,
+              232,
+              234,
+              235,
+            ),
+          )),
+          color: Color.fromARGB(
+            1,
+            232,
+            234,
+            235,
+          ),
           borderRadius: BorderRadius.only(
               topLeft: Radius.circular(5), bottomLeft: Radius.circular(5))),
       // width: 40,
@@ -46,7 +60,7 @@ class Item extends StatelessWidget {
             useEmoji: useEmoji,
           ),
           SizedBox(
-            width: 5,
+            width: 7,
           ),
           Icon(
             Icons.arrow_drop_down,
