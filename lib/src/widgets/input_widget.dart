@@ -60,7 +60,7 @@ class InternationalPhoneNumberInput extends StatefulWidget {
   /// Ignored if [setSelectorButtonAsPrefixIcon = true]
   final double spaceBetweenSelectorAndTextField;
   final int maxLength;
-
+  final bool? isDark;
   final bool isEnabled;
   final bool formatInput;
   final bool autoFocus;
@@ -94,6 +94,7 @@ class InternationalPhoneNumberInput extends StatefulWidget {
       this.onSubmit,
       this.onFieldSubmitted,
       this.validator,
+      this.isDark,
       this.onSaved,
       this.fieldKey,
       this.textFieldController,
@@ -301,6 +302,7 @@ class _InputWidgetState extends State<InternationalPhoneNumberInput> {
                 )),
           ),
           prefixIcon: SelectorButton(
+            isDark: widget.isDark,
             country: country,
             countries: countries,
             onCountryChanged: onCountryChanged,

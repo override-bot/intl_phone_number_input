@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:intl_phone_number_input/src/colors.dart';
 import 'package:intl_phone_number_input/src/models/country_model.dart';
 import 'package:intl_phone_number_input/src/utils/selector_config.dart';
 import 'package:intl_phone_number_input/src/utils/test/test_helper.dart';
@@ -17,6 +18,7 @@ class SelectorButton extends StatelessWidget {
   final String? locale;
   final bool isEnabled;
   final bool isScrollControlled;
+  final bool? isDark;
 
   final ValueChanged<Country?> onCountryChanged;
 
@@ -31,6 +33,7 @@ class SelectorButton extends StatelessWidget {
     required this.locale,
     required this.onCountryChanged,
     required this.isEnabled,
+    this.isDark,
     required this.isScrollControlled,
   }) : super(key: key);
 
@@ -66,6 +69,7 @@ class SelectorButton extends StatelessWidget {
             key: Key(TestHelper.DropdownButtonKeyValue),
             padding: EdgeInsets.zero,
             minWidth: 0,
+            color: isDark ?? false ? background_black : Colors.transparent,
             onPressed: countries.isNotEmpty && countries.length > 1 && isEnabled
                 ? () async {
                     Country? selected;
